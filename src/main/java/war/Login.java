@@ -14,11 +14,9 @@ public class Login extends WebPage {
 
 	  public Login()
 	  {
-	    TextField userIdField = new TextField("userId",
-	                  new PropertyModel(this,"userId"));
+	    TextField userIdField = new TextField("userId", new PropertyModel(this,"userId"));
 
-	    PasswordTextField passField = new PasswordTextField("password",
-	          new PropertyModel(this, "password"));
+	    PasswordTextField passField = new PasswordTextField("password", new PropertyModel(this, "password"));
 
 	    Form form = new LoginForm("loginForm");
 	    form.add(userIdField);
