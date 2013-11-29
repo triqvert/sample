@@ -24,7 +24,7 @@ public class WishListPage extends WebPage {
         	public void onSubmit()
         	{
         		//Wish wish = new Wish(this.toString(wishText));
-        		//sozdatj ekzempljar wish i dobavitj ego v kollekciju?
+        		//sozdatj ekzempljar wish i dobavitj ego v kollekciju? 
         	}
         	
         };
