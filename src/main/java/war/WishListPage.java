@@ -11,7 +11,9 @@ import org.apache.wicket.markup.html.list.PropertyListView;
 import org.apache.wicket.model.PropertyModel;
 
 public class WishListPage extends WebPage {
-    public WishListPage() {
+    public String wishText;
+	
+	public WishListPage() {
     	
     	TextField wishTextField = new TextField("wishText", new PropertyModel(this, "wishText")); 
     	WicketApplication app = (WicketApplication) this.getApplication();
@@ -23,8 +25,8 @@ public class WishListPage extends WebPage {
         	@Override
         	public void onSubmit()
         	{
-        		//Wish wish = new Wish(getWishText(), war.MySession.getUserId());        		
-        		//collection.addWish(wish);
+        		Wish wish = new Wish(getWishText(), MySession.get().getUserId());        		
+        		collection.addWish(wish);
         	}
         	
         };
