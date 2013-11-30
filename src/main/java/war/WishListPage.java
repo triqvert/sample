@@ -25,8 +25,10 @@ public class WishListPage extends WebPage {
         	@Override
         	public void onSubmit()
         	{
-        		Wish wish = new Wish(getWishText(), MySession.get().getUserId());        		
+        		//System.out.println("userId: " + MySession.get().getUserId());
+        		Wish wish = new Wish (getWishText(), MySession.get().getUserId());
         		collection.addWish(wish);
+        		this.setResponsePage(new WishListPage());
         	}
         	
         };
@@ -46,4 +48,14 @@ public class WishListPage extends WebPage {
         };
         this.add(wishListView);
     }
+	
+	public String getWishText()
+	  {
+	    return wishText;
+	  }
+	  
+	  public void setWishText(String wishText)
+	  {
+	    this.wishText = wishText;
+	  }
 }
