@@ -15,7 +15,7 @@ public class WishListPage extends WebPage {
     	
     	TextField wishTextField = new TextField("wishText", new PropertyModel(this, "wishText")); 
     	WicketApplication app = (WicketApplication) this.getApplication();
-    	WishCollection collection = app.getCollection();
+    	final WishCollection collection = app.getCollection();
         List<Wish> wishes = collection.getWishes();    
         
         Form form = new Form("wishForm")
@@ -24,7 +24,7 @@ public class WishListPage extends WebPage {
         	public void onSubmit()
         	{
         		//Wish wish = new Wish(getWishText(), war.MySession.getUserId());        		
-        		//war.WicketApplication._collection.addWish(wish);
+        		//collection.addWish(wish);
         	}
         	
         };
