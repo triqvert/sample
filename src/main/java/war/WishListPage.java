@@ -23,13 +23,14 @@ public class WishListPage extends WebPage {
         	@Override
         	public void onSubmit()
         	{
-        		//Wish wish = new Wish(this.toString(wishText));
-        		//sozdatj ekzempljar wish i dobavitj ego v kollekciju? 
+        		//Wish wish = new Wish(getWishText(), war.MySession.getUserId());        		
+        		//war.WicketApplication._collection.addWish(wish);
         	}
         	
         };
         
         form.add(wishTextField);
+        add(form);
        
         PropertyListView wishListView = new PropertyListView("wish_list", wishes) {
            private static final long serialVersionUID = 1L;

@@ -38,8 +38,8 @@ public class Login extends WebPage {
 	    {	    	
 	    	if(getUserId().equals("wicket") && getPassword().equals(password))
 	    	{
-	    		String userId = getUserId();
-	    		System.out.println(userId);
+	    		//String userId = getUserId();
+	    		//System.out.println(userId);
 	    		//Perexod na stranicu WishListPage
 	    		setResponsePage(WishListPage.class);
 	    	}	       

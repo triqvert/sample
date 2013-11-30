@@ -13,7 +13,7 @@ import org.apache.wicket.protocol.http.WebApplication;
  */
 public class WicketApplication extends WebApplication
 {   
-	private WishCollection _collection;
+	public static WishCollection _collection;
 	
     /**
      * Constructor
