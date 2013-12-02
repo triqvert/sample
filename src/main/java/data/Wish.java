@@ -1,4 +1,4 @@
-package war;
+package data;
 
 public class Wish {
 	private String _text = null;

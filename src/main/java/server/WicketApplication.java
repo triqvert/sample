@@ -1,10 +1,14 @@
-package war;
+package server;
 
 import org.apache.wicket.Request;
 import org.apache.wicket.Response;
 import org.apache.wicket.Session;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
+
+import data.Wish;
+import data.WishCollection;
+import webUI.Login;
 
 /**
  * Application object for your web application. If you want to run this application without deploying, run the Start class.

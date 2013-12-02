@@ -1,4 +1,4 @@
-package war;
+package data;
 
 import java.util.LinkedList;
 import java.util.List;

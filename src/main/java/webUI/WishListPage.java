@@ -1,4 +1,4 @@
-package war;
+package webUI;
 
 import java.util.List;
 
@@ -9,6 +9,11 @@ import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.PropertyListView;
 import org.apache.wicket.model.PropertyModel;
+
+import server.MySession;
+import server.WicketApplication;
+import data.Wish;
+import data.WishCollection;
 
 public class WishListPage extends WebPage {
     public String wishText;
